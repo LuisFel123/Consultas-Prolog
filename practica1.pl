@@ -1,4 +1,4 @@
-%base de conocimiento
+%base de conocimiento en este apartado colocamos todos lo hechos.
 ve_peliculas(roberto,suspenso).
 ve_peliculas(jaanai,suspenso).
 ve_peliculas(abimael,suspenso).
@@ -57,17 +57,17 @@ tiene_tardeperfecta(abimael,no).
 tiene_tardeperfecta(leonardo,si).
 tiene_tardeperfecta(miguel,si).
 
-%Ejercicio 1
+%Ejercicio 1 obtenemos a todos los que le gusta ver peliculas.
 %cuenta_net(X,si).
-%Ejercicio 2
+%Ejercicio 2 Obtenemos a todos los que le gusta escuchar musica
 %Cuenta_spo(X,si).
-%Ejercicio 3
+%Ejercicio 3 Obtenemos las siguiente caracteristicas dependiendo de las condiciones.
 estado1(X):-ve_peliculas(X,suspenso),consume(X,palomitas),cuenta_net(X,si),tiempo_libre(X,si),tiene_tardeperfecta(X,si).
-%Ejercicio 4
+%Ejercicio 4 Obtenemos las siguientes caracteristicas dependiendo de las condiciones.
 vida_saludable(X):-consume(X,ensalada),cuenta_net(X,si).
-%Ejercicio 5
+%Ejercicio 5 Obtenemos las siguientes caracteristicas dependiendo de las condiciones.
 disfruta_camino(X):-escucha_musica(X,regional),tiene_audifiono(X,si),cuenta_spo(X,si).
-%Ejercicio 6
+%Ejercicio 6 Obtenemos las siguientes caracteristicas dependiendo de las condiciones.
 es_feliz(X):-cuenta_net(X,si),consume(X,maruchan),tiempo_libre(X,si).
-%Ejercicio 7
+%Ejercicio 7 Obtenemos las siguientes caracteristicas dependiendo de las condiciones.
 son_amigos(X,Y):- consume(X,maruchan),consume(Y,maruchan);consume(X,palomitas),consume(Y,palomitas);consume(X,ensalada),consume(Y,ensalada);ve_peliculas(X,suspenso),ve_peliculas(Y,suspenso);ve_peliculas(X,romance),ve_peliculas(Y,romance); ve_peliculas(X,terror),ve_peliculas(Y,terror).
